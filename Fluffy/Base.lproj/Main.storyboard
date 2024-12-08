@@ -35,27 +35,34 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWi-9E-jbc" customClass="CustomButton" customModule="Fluffy" customModuleProvider="target">
                                 <rect key="frame" x="20" y="516.33333333333337" width="353" height="34.333333333333371"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6R-CU-aKN">
-                                <rect key="frame" x="119.66666666666667" y="570.66666666666663" width="153.66666666666663" height="34.333333333333371"/>
+                                <rect key="frame" x="101.66666666666669" y="570.66666666666663" width="190" height="29.666666666666629"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipV-Ea-Rw8" customClass="LoginViewTextButton" customModule="Fluffy" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipV-Ea-Rw8">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="29.666666666666668"/>
+                                        <color key="tintColor" name="TextColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="비밀번호 찾기">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
+                                        </buttonConfiguration>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLn-QF-byE">
-                                        <rect key="frame" x="74.999999999999986" y="0.0" width="3.6666666666666714" height="34.333333333333336"/>
+                                        <rect key="frame" x="94.999999999999986" y="0.0" width="3.6666666666666714" height="29.666666666666668"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-dR-0Xu" customClass="LoginViewTextButton" customModule="Fluffy" customModuleProvider="target">
-                                        <rect key="frame" x="78.666666666666671" y="0.0" width="75.000000000000014" height="34.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-dR-0Xu">
+                                        <rect key="frame" x="98.666666666666686" y="0.0" width="91.333333333333314" height="29.666666666666668"/>
+                                        <color key="tintColor" name="TextColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="회원가입">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -83,11 +90,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="findPasswordButton" destination="ipV-Ea-Rw8" id="tvO-zo-WWj"/>
+                        <outlet property="findPasswordButton" destination="ipV-Ea-Rw8" id="9vI-od-WeZ"/>
                         <outlet property="idTextField" destination="B4u-aZ-I7r" id="0NZ-U1-OtA"/>
                         <outlet property="loginButton" destination="tWi-9E-jbc" id="YSl-uY-FTD"/>
-                        <outlet property="passwordTextField" destination="xYx-jQ-j6f" id="As8-Mc-sfc"/>
-                        <outlet property="signupButton" destination="0Va-dR-0Xu" id="WpF-pB-G2f"/>
+                        <outlet property="passwordTextField" destination="xYx-jQ-j6f" id="cFZ-El-gzX"/>
+                        <outlet property="signupButton" destination="0Va-dR-0Xu" id="AJY-fJ-UHX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

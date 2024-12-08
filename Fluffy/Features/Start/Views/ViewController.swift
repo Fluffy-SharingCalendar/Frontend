@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var loginButton: CustomButton!
     
-    @IBOutlet weak var findPasswordButton: LoginViewTextButton!
-    @IBOutlet weak var signupButton: LoginViewTextButton!
+    @IBOutlet weak var findPasswordButton: UIButton!
+    @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +28,11 @@ class ViewController: UIViewController {
         
         loginButton.setTitle("로그인", for: .normal)
         
-        findPasswordButton.setTitle("비밀번호 찾기", for: .normal)
         findPasswordButton.contentHorizontalAlignment = .right
         findPasswordButton.sizeToFit()
         
-        signupButton.setTitle("회원가입", for: .normal)
         signupButton.contentHorizontalAlignment = .left
-        findPasswordButton.sizeToFit()
+        signupButton.sizeToFit()
         
     }
 }
