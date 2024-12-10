@@ -8,6 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var loginStackView: UIStackView!
+    
+    @IBOutlet weak var cloudImage: UIImageView!
+    @IBOutlet weak var fluffyImage: UIImageView!
+    
     @IBOutlet weak var idTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var loginButton: CustomButton!
@@ -15,10 +20,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var findPasswordButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+
         idTextField.placeholder = "아이디를 입력하세요."
         idTextField.setLeadingIcon(UIImage(named: "User")!)
         
@@ -34,6 +40,11 @@ class ViewController: UIViewController {
         signupButton.contentHorizontalAlignment = .left
         signupButton.sizeToFit()
         
+        loginStackView.setCustomSpacing(30, after: cloudImage)
+        loginStackView.setCustomSpacing(50, after: fluffyImage)
+        loginStackView.setCustomSpacing(7, after: idTextField)
+        loginStackView.setCustomSpacing(35, after: passwordTextField)
+        loginStackView.setCustomSpacing(20, after: loginButton)
     }
 }
 
