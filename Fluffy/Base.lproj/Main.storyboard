@@ -28,11 +28,15 @@
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4u-aZ-I7r" customClass="CustomTextField" customModule="Fluffy">
                                         <rect key="frame" x="20" y="114.33333333333331" width="353" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" name="TextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYx-jQ-j6f" customClass="CustomTextField" customModule="Fluffy" customModuleProvider="target">
                                         <rect key="frame" x="20" y="148.33333333333331" width="353" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" name="TextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
@@ -81,7 +85,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ybZ-vd-fcg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ic-Cr-xae"/>
@@ -89,6 +93,9 @@
                             <constraint firstItem="ybZ-vd-fcg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SoJ-Gr-oJt"/>
                             <constraint firstItem="ybZ-vd-fcg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vA7-ak-CyY"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jih-0j-TdG" appends="YES" id="ZxJ-kR-RNE"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="cloudImage" destination="6PS-yp-Vef" id="pVz-6F-OrU"/>
@@ -102,6 +109,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jih-0j-TdG">
+                    <connections>
+                        <action selector="tapBackgroundview:" destination="BYZ-38-t0r" id="nGz-5t-RxD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>

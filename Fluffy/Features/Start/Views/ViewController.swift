@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate{
     @IBOutlet weak var loginStackView: UIStackView!
     
     @IBOutlet weak var cloudImage: UIImageView!
@@ -20,11 +20,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var findPasswordButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        
+        setupKeybaordObserver()
+    
         idTextField.placeholder = "아이디를 입력하세요."
         idTextField.setLeadingIcon(UIImage(named: "User")!)
         
@@ -33,6 +34,7 @@ class ViewController: UIViewController {
         passwordTextField.isSecureTextEntry = true
         
         loginButton.setTitle("로그인", for: .normal)
+        
         
         findPasswordButton.contentHorizontalAlignment = .right
         findPasswordButton.sizeToFit()
@@ -45,6 +47,10 @@ class ViewController: UIViewController {
         loginStackView.setCustomSpacing(7, after: idTextField)
         loginStackView.setCustomSpacing(35, after: passwordTextField)
         loginStackView.setCustomSpacing(20, after: loginButton)
+    }
+    
+    @IBAction func tapBackgroundview(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 }
 

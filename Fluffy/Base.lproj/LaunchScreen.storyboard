@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZYS-ja-7dL">
-                                <rect key="frame" x="0.0" y="339" width="393" height="143"/>
+                                <rect key="frame" x="0.0" y="354.66666666666669" width="393" height="143"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CloudImage" translatesAutoresizingMaskIntoConstraints="NO" id="2LW-ac-Grw">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
@@ -37,11 +36,10 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ZYS-ja-7dL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="280" id="NZM-Sj-IdQ"/>
-                            <constraint firstItem="ZYS-ja-7dL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z4z-jW-sSv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZYS-ja-7dL" secondAttribute="trailing" id="gNS-qI-mjz"/>
+                            <constraint firstItem="ZYS-ja-7dL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Al0-ra-08t"/>
+                            <constraint firstItem="ZYS-ja-7dL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fYK-GE-3mK"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -53,8 +51,5 @@
     <resources>
         <image name="CloudImage" width="154.33332824707031" height="84.666664123535156"/>
         <image name="FluffyImage" width="82.333335876464844" height="29.666666030883789"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

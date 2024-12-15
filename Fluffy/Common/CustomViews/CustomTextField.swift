@@ -26,10 +26,11 @@ class CustomTextField: UITextField {
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor(named: "MainColor")?.cgColor
         self.layer.cornerRadius = 5
-        
+
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
         self.leftView = paddingView
         self.leftViewMode = .always
+        
         // TextField의 Top, Bottom에 패딩 주는 법
         NSLayoutConstraint.activate(
             [self.heightAnchor.constraint(equalToConstant: self.frame.height+20)])
