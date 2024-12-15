@@ -1,24 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fluffy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ybZ-vd-fcg">
+                                <rect key="frame" x="0.0" y="303" width="393" height="246.33333333333337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CloudImage" translatesAutoresizingMaskIntoConstraints="NO" id="6PS-yp-Vef">
+                                        <rect key="frame" x="119.33333333333333" y="0.0" width="154.33333333333337" height="84.666666666666671"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FluffyImage" translatesAutoresizingMaskIntoConstraints="NO" id="w1S-5a-Xpt">
+                                        <rect key="frame" x="155.33333333333334" y="84.666666666666686" width="82.333333333333343" height="29.666666666666671"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B4u-aZ-I7r" customClass="CustomTextField" customModule="Fluffy">
+                                        <rect key="frame" x="20" y="114.33333333333331" width="353" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xYx-jQ-j6f" customClass="CustomTextField" customModule="Fluffy" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="148.33333333333331" width="353" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" name="TextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWi-9E-jbc" customClass="CustomButton" customModule="Fluffy" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="182.33333333333331" width="353" height="34.333333333333343"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6R-CU-aKN">
+                                        <rect key="frame" x="101.66666666666669" y="216.66666666666663" width="190" height="29.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipV-Ea-Rw8">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="29.666666666666668"/>
+                                                <color key="tintColor" name="TextColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 찾기">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLn-QF-byE">
+                                                <rect key="frame" x="94.999999999999986" y="0.0" width="3.6666666666666714" height="29.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-dR-0Xu">
+                                                <rect key="frame" x="98.666666666666686" y="0.0" width="91.333333333333314" height="29.666666666666668"/>
+                                                <color key="tintColor" name="TextColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="회원가입">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="B4u-aZ-I7r" secondAttribute="trailing" constant="20" id="6G7-Ls-GSS"/>
+                                    <constraint firstItem="B4u-aZ-I7r" firstAttribute="leading" secondItem="ybZ-vd-fcg" secondAttribute="leading" constant="20" id="Fvn-1j-64L"/>
+                                    <constraint firstItem="tWi-9E-jbc" firstAttribute="leading" secondItem="ybZ-vd-fcg" secondAttribute="leading" constant="20" id="d1g-a1-7HL"/>
+                                    <constraint firstAttribute="trailing" secondItem="tWi-9E-jbc" secondAttribute="trailing" constant="20" id="f0a-Ub-dVg"/>
+                                    <constraint firstAttribute="trailing" secondItem="xYx-jQ-j6f" secondAttribute="trailing" constant="20" id="gNG-DI-fy0"/>
+                                    <constraint firstItem="xYx-jQ-j6f" firstAttribute="leading" secondItem="ybZ-vd-fcg" secondAttribute="leading" constant="20" id="qOf-WU-eGG"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ybZ-vd-fcg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ic-Cr-xae"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ybZ-vd-fcg" secondAttribute="trailing" id="Ntk-5h-2tJ"/>
+                            <constraint firstItem="ybZ-vd-fcg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SoJ-Gr-oJt"/>
+                            <constraint firstItem="ybZ-vd-fcg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vA7-ak-CyY"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jih-0j-TdG" appends="YES" id="ZxJ-kR-RNE"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="cloudImage" destination="6PS-yp-Vef" id="pVz-6F-OrU"/>
+                        <outlet property="findPasswordButton" destination="ipV-Ea-Rw8" id="9vI-od-WeZ"/>
+                        <outlet property="fluffyImage" destination="w1S-5a-Xpt" id="bjb-Ii-MjF"/>
+                        <outlet property="idTextField" destination="B4u-aZ-I7r" id="0NZ-U1-OtA"/>
+                        <outlet property="loginButton" destination="tWi-9E-jbc" id="YSl-uY-FTD"/>
+                        <outlet property="loginStackView" destination="ybZ-vd-fcg" id="DkV-aT-A7i"/>
+                        <outlet property="passwordTextField" destination="xYx-jQ-j6f" id="cFZ-El-gzX"/>
+                        <outlet property="signupButton" destination="0Va-dR-0Xu" id="AJY-fJ-UHX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jih-0j-TdG">
+                    <connections>
+                        <action selector="tapBackgroundview:" destination="BYZ-38-t0r" id="nGz-5t-RxD"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CloudImage" width="154.33332824707031" height="84.666664123535156"/>
+        <image name="FluffyImage" width="82.333335876464844" height="29.666666030883789"/>
+        <namedColor name="TextColor">
+            <color red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
