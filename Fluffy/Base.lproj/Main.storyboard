@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j92-TH-UfG">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fluffy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignIn" id="BYZ-38-t0r" customClass="ViewController" customModule="Fluffy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +70,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="회원가입">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="13"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="AHE-jb-CzW" kind="show" id="mbI-1N-TpR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -97,6 +100,9 @@
                             <outletCollection property="gestureRecognizers" destination="jih-0j-TdG" appends="YES" id="ZxJ-kR-RNE"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="0LQ-OZ-2Ac">
+                        <barButtonItem key="backBarButtonItem" title=" " id="P5c-Pd-YdM"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="cloudImage" destination="6PS-yp-Vef" id="pVz-6F-OrU"/>
                         <outlet property="findPasswordButton" destination="ipV-Ea-Rw8" id="9vI-od-WeZ"/>
@@ -115,12 +121,56 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1107.6335877862596" y="131.69014084507043"/>
+        </scene>
+        <!--회원가입-->
+        <scene sceneID="Pc2-QI-BoK">
+            <objects>
+                <viewController storyboardIdentifier="SignUp" id="AHE-jb-CzW" customClass="SignUpViewController" customModule="Fluffy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Rc-Pz-DSx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="B3y-NR-mbJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="회원가입" id="oIJ-hA-EQp">
+                        <barButtonItem key="backBarButtonItem" title=" " id="OgW-yr-A1o"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nZP-yK-Jp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="829"/>
+        </scene>
+        <!--Custom Navigation Bar-->
+        <scene sceneID="den-0E-Jfj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j92-TH-UfG" customClass="CustomNavigationBar" customModule="Fluffy" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="Back" backIndicatorTransitionMaskImage="Back" id="N7F-vO-eh9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="NaviColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9YM-1S-VEo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GWA-4a-a6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="-583"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Back" width="24" height="24"/>
         <image name="CloudImage" width="154.33332824707031" height="84.666664123535156"/>
         <image name="FluffyImage" width="82.333335876464844" height="29.666666030883789"/>
+        <namedColor name="NaviColor">
+            <color red="0.1843137443" green="0.2117646933" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="TextColor">
             <color red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
