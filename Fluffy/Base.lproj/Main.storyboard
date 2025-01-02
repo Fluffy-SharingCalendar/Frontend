@@ -130,16 +130,29 @@
                     <view key="view" contentMode="scaleToFill" id="5Rc-Pz-DSx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TOk-Qt-Wb9" customClass="CustomQ_A" customModule="Fluffy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="668" width="353" height="100"/>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="B3y-NR-mbJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TOk-Qt-Wb9" firstAttribute="leading" secondItem="B3y-NR-mbJ" secondAttribute="leading" constant="20" id="XL5-uE-ckd"/>
+                            <constraint firstItem="B3y-NR-mbJ" firstAttribute="trailing" secondItem="TOk-Qt-Wb9" secondAttribute="trailing" constant="20" id="bOP-Nq-YDG"/>
+                            <constraint firstItem="B3y-NR-mbJ" firstAttribute="bottom" secondItem="TOk-Qt-Wb9" secondAttribute="bottom" constant="100" id="ksi-0F-UJx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="회원가입" id="oIJ-hA-EQp">
                         <barButtonItem key="backBarButtonItem" title=" " id="OgW-yr-A1o"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="passwordStackView" destination="TOk-Qt-Wb9" id="2mY-v4-2Rg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZP-yK-Jp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="829"/>
+            <point key="canvasLocation" x="1107.6335877862596" y="828.87323943661977"/>
         </scene>
         <!--Custom Navigation Bar-->
         <scene sceneID="den-0E-Jfj">
@@ -169,7 +182,7 @@
         <image name="CloudImage" width="154.33332824707031" height="84.666664123535156"/>
         <image name="FluffyImage" width="82.333335876464844" height="29.666666030883789"/>
         <namedColor name="NaviColor">
-            <color red="0.1843137443" green="0.2117646933" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.18431372549019609" green="0.20784313725490197" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="TextColor">
             <color red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
