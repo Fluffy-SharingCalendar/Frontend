@@ -134,13 +134,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TOk-Qt-Wb9" customClass="CustomQ_A" customModule="Fluffy" customModuleProvider="target">
                                 <rect key="frame" x="20" y="668" width="353" height="100"/>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EVt-el-yPw" customClass="CustomQ_A" customModule="Fluffy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="535" width="353" height="100"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B3y-NR-mbJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TOk-Qt-Wb9" firstAttribute="leading" secondItem="B3y-NR-mbJ" secondAttribute="leading" constant="20" id="XL5-uE-ckd"/>
                             <constraint firstItem="B3y-NR-mbJ" firstAttribute="trailing" secondItem="TOk-Qt-Wb9" secondAttribute="trailing" constant="20" id="bOP-Nq-YDG"/>
+                            <constraint firstItem="TOk-Qt-Wb9" firstAttribute="top" secondItem="EVt-el-yPw" secondAttribute="bottom" constant="20" id="dXd-2V-rrS"/>
                             <constraint firstItem="B3y-NR-mbJ" firstAttribute="bottom" secondItem="TOk-Qt-Wb9" secondAttribute="bottom" constant="100" id="ksi-0F-UJx"/>
+                            <constraint firstItem="EVt-el-yPw" firstAttribute="leading" secondItem="B3y-NR-mbJ" secondAttribute="leading" constant="20" id="t4S-Qo-5nl"/>
+                            <constraint firstItem="B3y-NR-mbJ" firstAttribute="trailing" secondItem="EVt-el-yPw" secondAttribute="trailing" constant="20" id="waY-l5-2CJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="회원가입" id="oIJ-hA-EQp">
@@ -148,6 +154,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="passwordStackView" destination="TOk-Qt-Wb9" id="2mY-v4-2Rg"/>
+                        <outlet property="questionStackView" destination="EVt-el-yPw" id="xVR-1c-gi0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZP-yK-Jp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
