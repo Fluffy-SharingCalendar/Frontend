@@ -26,15 +26,20 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
         
         setupKeybaordObserver()
     
-        idTextField.placeholder = "아이디를 입력하세요."
+       idTextField.attributedPlaceholder = NSAttributedString(
+                string: "아이디를 입력하세요.",
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "TextColor")!]
+            )
         idTextField.setLeadingIcon(UIImage(named: "User")!)
-        
-        passwordTextField.placeholder = "비밀번호를 입력하세요."
+    
+        passwordTextField.attributedPlaceholder = NSAttributedString(
+                string: "비밀번호를 입력하세요.",
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "TextColor")!]
+            )
         passwordTextField.setLeadingIcon(UIImage(named: "Unlock")!)
         passwordTextField.isSecureTextEntry = true
         
         loginButton.setTitle("로그인", for: .normal)
-        
         
         findPasswordButton.contentHorizontalAlignment = .right
         findPasswordButton.sizeToFit()

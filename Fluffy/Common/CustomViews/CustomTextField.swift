@@ -31,9 +31,8 @@ class CustomTextField: UITextField {
         self.leftView = paddingView
         self.leftViewMode = .always
         
-        // TextField의 Top, Bottom에 패딩 주는 법
-        NSLayoutConstraint.activate(
-            [self.heightAnchor.constraint(equalToConstant: self.frame.height+20)])
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
     }
     

@@ -18,6 +18,7 @@ extension UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(UIViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    
     // 키보드가 올라올 때 실행될 메서드
     @objc func keyboardWillShow(notification: NSNotification) {
         print("키보드 올라옴")

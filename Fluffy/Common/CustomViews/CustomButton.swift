@@ -25,7 +25,7 @@ class CustomButton: UIButton {
         self.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         self.setTitleColor(.white, for: .normal)
         
-        NSLayoutConstraint.activate(
-            [self.heightAnchor.constraint(equalToConstant: self.frame.height+20)])
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
 }
