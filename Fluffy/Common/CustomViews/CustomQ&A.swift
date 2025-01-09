@@ -9,7 +9,7 @@ import UIKit
 
 class CustomQ_A: UIStackView {
     // 질문에 답변하는 TextField
-    private func answerTextField(_ placeholder: String) -> UITextField {
+    private func answerTextField(_ placeholder: String, _ isPasswordField: Bool) -> UITextField {
         let textField = UITextField()
         
         
@@ -30,6 +30,8 @@ class CustomQ_A: UIStackView {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
+        textField.isSecureTextEntry = isPasswordField
+        
         return textField
     }
     
@@ -40,6 +42,8 @@ class CustomQ_A: UIStackView {
         textField.font = UIFont.systemFont(ofSize: 15)
         textField.textColor = UIColor(named: "TextColor")
         textField.tintColor = UIColor(named: "MainColor")
+        
+        textField.isSecureTextEntry = true
         
         textField.attributedPlaceholder = NSAttributedString(
                 string: placeholder,
@@ -145,7 +149,7 @@ class CustomQ_A: UIStackView {
             self.addArrangedSubview(lineView)
             
             // answerTextField 생성 및 추가
-            let answerField = answerTextField(answerPlaceholder)
+            let answerField = answerTextField(answerPlaceholder, isPasswordField)
             self.addArrangedSubview(answerField)
         } else {
             let questionField = questionPullDownButton(image, questionPlaceholder)
@@ -159,7 +163,7 @@ class CustomQ_A: UIStackView {
                 ])
             self.addArrangedSubview(lineView)
             
-            let answerField = answerTextField(answerPlaceholder)
+            let answerField = answerTextField(answerPlaceholder, isPasswordField)
             self.addArrangedSubview(answerField)
         }
     }
