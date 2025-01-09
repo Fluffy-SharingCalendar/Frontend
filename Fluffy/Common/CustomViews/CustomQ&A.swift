@@ -17,6 +17,8 @@ class CustomQ_A: UIStackView {
         textField.textColor = UIColor(named: "TextColor")
         textField.tintColor = UIColor(named: "MainColor")
         
+        if (isPasswordField) {textField.textContentType = .password}
+        
         textField.attributedPlaceholder = NSAttributedString(
                 string: placeholder,
                 attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "TextColor")!]
@@ -42,8 +44,7 @@ class CustomQ_A: UIStackView {
         textField.font = UIFont.systemFont(ofSize: 15)
         textField.textColor = UIColor(named: "TextColor")
         textField.tintColor = UIColor(named: "MainColor")
-        
-        textField.isSecureTextEntry = true
+    
         
         textField.attributedPlaceholder = NSAttributedString(
                 string: placeholder,
@@ -63,6 +64,10 @@ class CustomQ_A: UIStackView {
 
         textField.leftView = iconContainerView
         textField.leftViewMode = .always
+        
+        textField.textContentType = .password
+        
+        textField.isSecureTextEntry = true
         
         return textField
     }

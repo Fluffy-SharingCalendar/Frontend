@@ -135,32 +135,32 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAu-jc-Xqx">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="381.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="681.33333333333337"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRV-ET-RBd">
-                                                <rect key="frame" x="25" y="35" width="343" height="15.666666666666664"/>
+                                                <rect key="frame" x="25" y="25.000000000000004" width="343" height="15.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Si0-V6-VJW" customClass="CustomTextField" customModule="Fluffy" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="55.666666666666657" width="353" height="34"/>
+                                                <rect key="frame" x="20" y="45.666666666666657" width="353" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4l-MI-q9z">
-                                                <rect key="frame" x="25" y="114.66666666666666" width="343" height="15.666666666666657"/>
+                                                <rect key="frame" x="25" y="104.66666666666666" width="343" height="15.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z2T-bB-PJi" customClass="CustomTextField" customModule="Fluffy" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="135.33333333333334" width="353" height="34"/>
+                                                <rect key="frame" x="20" y="125.33333333333334" width="353" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMV-lh-LmW">
-                                                <rect key="frame" x="20" y="169.33333333333331" width="353" height="26.333333333333343"/>
+                                                <rect key="frame" x="20" y="159.33333333333331" width="353" height="26.333333333333343"/>
                                                 <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="중복확인">
@@ -168,7 +168,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzP-wj-mh5">
-                                                <rect key="frame" x="25" y="215.66666666666669" width="348" height="15.666666666666657"/>
+                                                <rect key="frame" x="25" y="205.66666666666669" width="348" height="15.666666666666657"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9q-3h-bLU">
                                                         <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="15.666666666666666"/>
@@ -189,17 +189,34 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t0I-IJ-eTD" customClass="CustomQ_A" customModule="Fluffy" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="236.33333333333331" width="353" height="100"/>
+                                                <rect key="frame" x="20" y="226.33333333333331" width="353" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="nFu-64-GIq"/>
                                                 </constraints>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ra-jD-wPC">
-                                                <rect key="frame" x="25.000000000000004" y="356.33333333333331" width="41.333333333333343" height="20.333333333333314"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인 확인 질문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ra-jD-wPC">
+                                                <rect key="frame" x="25" y="356.33333333333331" width="74.333333333333329" height="15.666666666666686"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KB0-KD-iDS" customClass="CustomQ_A" customModule="Fluffy" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="377" width="353" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="buP-Sb-naW"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wh8-zq-4LJ" customClass="CustomQ_A" customModule="Fluffy" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="487" width="353" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Eb6-IE-SVZ"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fj9-zU-pdh" customClass="CustomButton" customModule="Fluffy" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="617" width="353" height="34.333333333333371"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -207,6 +224,7 @@
                                             <constraint firstItem="TMV-lh-LmW" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="20" id="1mR-j2-78A"/>
                                             <constraint firstAttribute="trailing" secondItem="sRV-ET-RBd" secondAttribute="trailing" constant="25" id="6c4-3o-gWp"/>
                                             <constraint firstItem="t0I-IJ-eTD" firstAttribute="top" secondItem="zzP-wj-mh5" secondAttribute="bottom" constant="5" id="6ir-ja-56e"/>
+                                            <constraint firstItem="Fj9-zU-pdh" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="20" id="7h4-HE-QnZ"/>
                                             <constraint firstItem="Si0-V6-VJW" firstAttribute="top" secondItem="sRV-ET-RBd" secondAttribute="bottom" constant="5" id="9OZ-kw-hEF"/>
                                             <constraint firstItem="Z2T-bB-PJi" firstAttribute="top" secondItem="l4l-MI-q9z" secondAttribute="bottom" constant="5" id="Ah1-1l-fUV"/>
                                             <constraint firstAttribute="trailing" secondItem="Z2T-bB-PJi" secondAttribute="trailing" constant="20" id="Goe-7q-yJn"/>
@@ -214,15 +232,23 @@
                                             <constraint firstItem="l4l-MI-q9z" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="25" id="MS1-zT-Eb8"/>
                                             <constraint firstItem="sRV-ET-RBd" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="25" id="NmR-me-Mht"/>
                                             <constraint firstItem="1ra-jD-wPC" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="25" id="OWu-Go-3J5"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fj9-zU-pdh" secondAttribute="trailing" constant="20" id="Q9q-N4-ckc"/>
                                             <constraint firstItem="Si0-V6-VJW" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="20" id="Qpv-GH-YKB"/>
+                                            <constraint firstItem="wh8-zq-4LJ" firstAttribute="top" secondItem="KB0-KD-iDS" secondAttribute="bottom" constant="10" id="SOi-Eo-DXO"/>
+                                            <constraint firstAttribute="trailing" secondItem="KB0-KD-iDS" secondAttribute="trailing" constant="20" id="UCu-pc-5HH"/>
+                                            <constraint firstAttribute="bottom" secondItem="Fj9-zU-pdh" secondAttribute="bottom" constant="30" id="WZP-ao-SME"/>
+                                            <constraint firstItem="Fj9-zU-pdh" firstAttribute="top" secondItem="wh8-zq-4LJ" secondAttribute="bottom" constant="30" id="Z9J-JH-vn9"/>
                                             <constraint firstAttribute="trailing" secondItem="zzP-wj-mh5" secondAttribute="trailing" constant="20" id="bwh-zt-Fnu"/>
                                             <constraint firstItem="l4l-MI-q9z" firstAttribute="top" secondItem="Si0-V6-VJW" secondAttribute="bottom" constant="25" id="d9W-kP-kC6"/>
-                                            <constraint firstItem="sRV-ET-RBd" firstAttribute="top" secondItem="YAu-jc-Xqx" secondAttribute="top" constant="35" id="ehI-k1-zXp"/>
+                                            <constraint firstItem="sRV-ET-RBd" firstAttribute="top" secondItem="YAu-jc-Xqx" secondAttribute="top" constant="25" id="ehI-k1-zXp"/>
                                             <constraint firstItem="zzP-wj-mh5" firstAttribute="top" secondItem="TMV-lh-LmW" secondAttribute="bottom" constant="20" id="esa-lF-s2f"/>
                                             <constraint firstItem="Z2T-bB-PJi" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="20" id="hBW-Rc-8PQ"/>
-                                            <constraint firstItem="1ra-jD-wPC" firstAttribute="top" secondItem="t0I-IJ-eTD" secondAttribute="bottom" constant="20" id="hgZ-MJ-Q5j"/>
+                                            <constraint firstItem="1ra-jD-wPC" firstAttribute="top" secondItem="t0I-IJ-eTD" secondAttribute="bottom" constant="30" id="hgZ-MJ-Q5j"/>
+                                            <constraint firstItem="KB0-KD-iDS" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="20" id="lCP-dy-AcD"/>
+                                            <constraint firstItem="wh8-zq-4LJ" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="20" id="laE-qu-nvy"/>
+                                            <constraint firstAttribute="trailing" secondItem="wh8-zq-4LJ" secondAttribute="trailing" constant="20" id="oW2-ks-3BD"/>
                                             <constraint firstItem="t0I-IJ-eTD" firstAttribute="leading" secondItem="YAu-jc-Xqx" secondAttribute="leading" constant="20" id="pZp-qn-A8w"/>
-                                            <constraint firstAttribute="bottom" secondItem="1ra-jD-wPC" secondAttribute="bottom" constant="5" id="rMc-95-cPk"/>
+                                            <constraint firstItem="KB0-KD-iDS" firstAttribute="top" secondItem="1ra-jD-wPC" secondAttribute="bottom" constant="5" id="r10-sb-lq2"/>
                                             <constraint firstAttribute="trailing" secondItem="TMV-lh-LmW" secondAttribute="trailing" constant="20" id="rTT-Iu-IxD"/>
                                             <constraint firstAttribute="trailing" secondItem="Si0-V6-VJW" secondAttribute="trailing" constant="20" id="x5G-we-WpU"/>
                                             <constraint firstAttribute="trailing" secondItem="l4l-MI-q9z" secondAttribute="trailing" constant="25" id="xgn-Xf-4tD"/>
@@ -258,16 +284,19 @@
                         <outlet property="idFieldView" destination="Z2T-bB-PJi" id="uNk-sw-yYc"/>
                         <outlet property="nameFieldView" destination="Si0-V6-VJW" id="NOY-Sq-eRQ"/>
                         <outlet property="passwordStackView" destination="t0I-IJ-eTD" id="ubr-PG-OJF"/>
+                        <outlet property="questionStackView1" destination="KB0-KD-iDS" id="Zhr-p4-YVu"/>
+                        <outlet property="questionStackView2" destination="wh8-zq-4LJ" id="ah7-OQ-g7Q"/>
+                        <outlet property="signUpButton" destination="Fj9-zU-pdh" id="VUa-Ma-Cce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZP-yK-Jp9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1107.6335877862596" y="828.87323943661977"/>
         </scene>
-        <!--Custom Navigation Bar-->
+        <!--Navigation Controller-->
         <scene sceneID="den-0E-Jfj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j92-TH-UfG" customClass="CustomNavigationBar" customModule="Fluffy" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j92-TH-UfG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="Back" backIndicatorTransitionMaskImage="Back" id="N7F-vO-eh9">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

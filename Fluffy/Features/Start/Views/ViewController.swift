@@ -41,7 +41,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate{
         
         loginButton.setTitle("로그인", for: .normal)
         
-        
         findPasswordButton.contentHorizontalAlignment = .right
         findPasswordButton.sizeToFit()
         
